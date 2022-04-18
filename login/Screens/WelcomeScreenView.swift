@@ -15,7 +15,7 @@ struct WelcomeScreenView: View {
                 Spacer()
                 Image("onboard")
                 Spacer()
-                GetStartedButton(title: "Get Started")
+                PrimaryButton(title: "Get Started")
                 SignInButton(title: "Sign In")
                 SignUp()
                     .padding(.vertical)
