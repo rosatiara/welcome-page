@@ -1,9 +1,3 @@
-//
-//  loginUITests.swift
-//  loginUITests
-//
-//  Created by Abu Anwar MD Abdullah on 23/4/21.
-//
 
 import XCTest
 
