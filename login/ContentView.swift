@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Image("onboard")
-            GetStartedButton()
+            GetStartedButton(title: "Get Started")
         }
         .padding(30)
     }
@@ -24,8 +24,9 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct GetStartedButton: View {
+    var title: String
     var body: some View {
-        Text("Get Started")
+        Text(title)
             .fontWeight(.bold)
             .font(.title3)
             .frame(maxWidth: .infinity)
