@@ -9,7 +9,19 @@ import SwiftUI
 
 struct WelcomeScreenView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color("BgColor").edgesIgnoringSafeArea(.all)
+            VStack {
+                Spacer()
+                Image("onboard")
+                Spacer()
+                GetStartedButton(title: "Get Started")
+                SignInButton(title: "Sign In")
+                SignUp()
+                    .padding(.vertical)
+            }
+        }
+        .padding(30)
     }
 }
 

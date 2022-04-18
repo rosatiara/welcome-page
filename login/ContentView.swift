@@ -9,17 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            Color("BgColor").edgesIgnoringSafeArea(.all)
-            VStack {
-                Image("onboard")
-                    .padding(.bottom)
-                GetStartedButton(title: "Get Started")
-                SignInButton(title: "Sign In")
-                SignUp()
-            }
+        VStack {
+            WelcomeScreenView()
         }
-        .padding(30)
     }
 }
 
@@ -67,3 +59,5 @@ struct SignUp: View {
         }
     }
 }
+
+
