@@ -9,9 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image("onboard")
-            GetStartedButton(title: "Get Started")
+        ZStack {
+            Color("BgColor").edgesIgnoringSafeArea(.all)
+            VStack {
+                Image("onboard")
+                    .padding(.bottom)
+                GetStartedButton(title: "Get Started")
+                SignInButton(title: "Sign In")
+                SignUp()
+            }
         }
         .padding(30)
     }
@@ -30,9 +36,34 @@ struct GetStartedButton: View {
             .fontWeight(.bold)
             .font(.title3)
             .frame(maxWidth: .infinity)
-            .padding(20)
+            .padding()
             .foregroundColor(.white)
             .background(Color("PrimaryColor"))
             .cornerRadius(40)
+    }
+}
+
+struct SignInButton: View {
+    var title: String
+    var body: some View {
+        Text(title)
+            .fontWeight(.bold)
+            .font(.title3)
+            .frame(maxWidth: .infinity)
+            .padding()
+            .foregroundColor(Color("PrimaryColor"))
+            .background(Color(.white))
+            .cornerRadius(40)
+            .shadow(color: Color.black.opacity(0.09), radius: 60, x: 0, y: 20)
+    }
+}
+
+struct SignUp: View {
+    var body: some View {
+        HStack {
+            Text("New comer?")
+            Text("Sign up")
+                .foregroundColor(Color("PrimaryColor"))
+        }
     }
 }
