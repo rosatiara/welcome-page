@@ -23,8 +23,7 @@ struct WelcomeScreenView: View {
                         },
                         label: {
                             SignInButton(title: "Sign in")
-                        }
-                    )
+                        }).navigationBarHidden(true)
                     SignUp()
                         .padding(.vertical)
                 }

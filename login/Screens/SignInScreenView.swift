@@ -28,7 +28,6 @@ struct SignInScreenView: View {
                         .padding(.top, 5)
                 }
                 Spacer()
-                Divider()
                 Spacer()
                 Text("You are 100% safe.")
                     .foregroundColor(Color.black.opacity(0.5))
