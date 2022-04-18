@@ -28,20 +28,6 @@ struct PrimaryButton: View {
     }
 }
 
-struct SignInButton: View {
-    var title: String
-    var body: some View {
-        Text(title)
-            .fontWeight(.bold)
-            .font(.title3)
-            .frame(maxWidth: .infinity)
-            .padding()
-            .foregroundColor(Color("PrimaryColor"))
-            .background(Color(.white))
-            .cornerRadius(40)
-            .shadow(color: Color.black.opacity(0.09), radius: 60, x: 0, y: 20)
-    }
-}
 
 struct SignUp: View {
     var body: some View {
