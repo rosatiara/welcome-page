@@ -11,14 +11,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Image("onboard")
-            Text("Get Started")
-                .fontWeight(.bold)
-                .font(.title3)
-                .frame(maxWidth: .infinity)
-                .padding(20)
-                .foregroundColor(.white)
-                .background(Color("PrimaryColor"))
-                .cornerRadius(40)
+            GetStartedButton()
         }
         .padding(30)
     }
@@ -27,5 +20,18 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct GetStartedButton: View {
+    var body: some View {
+        Text("Get Started")
+            .fontWeight(.bold)
+            .font(.title3)
+            .frame(maxWidth: .infinity)
+            .padding(20)
+            .foregroundColor(.white)
+            .background(Color("PrimaryColor"))
+            .cornerRadius(40)
     }
 }
