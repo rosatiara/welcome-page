@@ -9,19 +9,21 @@ import SwiftUI
 
 struct WelcomeScreenView: View {
     var body: some View {
-        ZStack {
-            Color("BgColor").edgesIgnoringSafeArea(.all)
-            VStack {
-                Spacer()
-                Image("onboard")
-                Spacer()
-                PrimaryButton(title: "Get Started")
-                SignInButton(title: "Sign In")
-                SignUp()
-                    .padding(.vertical)
+        NavigationView {
+            ZStack {
+                Color("BgColor").edgesIgnoringSafeArea(.all)
+                VStack {
+                    Spacer()
+                    Image("onboard")
+                    Spacer()
+                    PrimaryButton(title: "Get Started")
+                    SignInButton(title: "Sign In")
+                    SignUp()
+                        .padding(.vertical)
+                }
             }
+            .padding(30)
         }
-        .padding(30)
     }
 }
 
