@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+   
     var body: some View {
         ZStack {
             Color("BgColor").edgesIgnoringSafeArea(.all)
@@ -17,6 +18,9 @@ struct ContentView: View {
                     .fontWeight(.bold)
                 SocialLoginButton(image: Image("apple"), text: Text("Sign in with Apple"))
                 SocialLoginButton(image: Image("google"), text: Text("Sign in with Google").foregroundColor(Color("PrimaryColor")))
+                Text("or get a link emailed to you").foregroundColor(Color.black.opacity(0.3))
+                    .padding(.vertical)
+                EmailTextField()
                 
             }.padding(30)
         }
@@ -87,3 +91,15 @@ struct SocialLoginButton: View {
 }
 
 
+struct EmailTextField: View {
+    @State private var email: String = "" // empty by default
+    var body: some View {
+        TextField("Email address", text: $email)
+            .padding()
+            .frame(maxWidth: .infinity)
+            .background(Color(.white))
+            .cornerRadius(20)
+            .shadow(color: Color.black.opacity(0.09), radius: 60, x: 0, y: 20)
+        
+    }
+}
