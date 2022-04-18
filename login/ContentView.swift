@@ -9,8 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            WelcomeScreenView()
+        ZStack {
+            Color("BgColor").edgesIgnoringSafeArea(.all)
+            VStack {
+                Text("Sign In")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                SocialLoginButton(image: Image("apple"), text: Text("Sign in with Apple"))
+                SocialLoginButton(image: Image("google"), text: Text("Sign in with Google").foregroundColor(Color("PrimaryColor")))
+                
+            }.padding(30)
         }
     }
 }
@@ -57,6 +65,24 @@ struct SignUp: View {
             Text("Sign up")
                 .foregroundColor(Color("PrimaryColor"))
         }
+    }
+}
+
+struct SocialLoginButton: View {
+    var image: Image
+    var text: Text
+    var body: some View {
+        HStack {
+            image
+            Spacer()
+            text
+            Spacer()
+        }
+        .padding()
+        .frame(maxWidth: .infinity)
+        .background(Color(.white))
+        .cornerRadius(50)
+        .shadow(color: Color.black.opacity(0.09), radius: 60, x: 0, y: 20)
     }
 }
 
