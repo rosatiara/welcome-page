@@ -13,6 +13,10 @@
 		13BD6E84280DCC9B00B194BD /* loginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD6E83280DCC9B00B194BD /* loginTests.swift */; };
 		13BD6E86280DCCA500B194BD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13BD6E85280DCCA500B194BD /* Info.plist */; };
 		13BD6E88280DCCAA00B194BD /* loginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD6E87280DCCAA00B194BD /* loginUITests.swift */; };
+		13BD6E8D280DCD6200B194BD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13BD6E8B280DCD6200B194BD /* Info.plist */; };
+		13BD6E8E280DCD6200B194BD /* loginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD6E8C280DCD6200B194BD /* loginTests.swift */; };
+		13BD6E91280DCD6E00B194BD /* loginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD6E8F280DCD6E00B194BD /* loginUITests.swift */; };
+		13BD6E92280DCD6E00B194BD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13BD6E90280DCD6E00B194BD /* Info.plist */; };
 		885230E8263272E100DBCF3F /* loginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885230E7263272E100DBCF3F /* loginApp.swift */; };
 		885230EA263272E100DBCF3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885230E9263272E100DBCF3F /* ContentView.swift */; };
 		885230EC263272E200DBCF3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885230EB263272E200DBCF3F /* Assets.xcassets */; };
@@ -45,6 +49,10 @@
 		13BD6E83280DCC9B00B194BD /* loginTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = loginTests.swift; path = "../../../Documents/welcome-sign-in/loginTests/loginTests.swift"; sourceTree = "<group>"; };
 		13BD6E85280DCCA500B194BD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../Documents/welcome-sign-in/loginUITests/Info.plist"; sourceTree = "<group>"; };
 		13BD6E87280DCCAA00B194BD /* loginUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = loginUITests.swift; path = "../../../Documents/welcome-sign-in/loginUITests/loginUITests.swift"; sourceTree = "<group>"; };
+		13BD6E8B280DCD6200B194BD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../Documents/welcome-sign-in/loginTests/Info.plist"; sourceTree = "<group>"; };
+		13BD6E8C280DCD6200B194BD /* loginTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = loginTests.swift; path = "../../../Documents/welcome-sign-in/loginTests/loginTests.swift"; sourceTree = "<group>"; };
+		13BD6E8F280DCD6E00B194BD /* loginUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = loginUITests.swift; path = "../../../Documents/welcome-sign-in/loginUITests/loginUITests.swift"; sourceTree = "<group>"; };
+		13BD6E90280DCD6E00B194BD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../Documents/welcome-sign-in/loginUITests/Info.plist"; sourceTree = "<group>"; };
 		885230E4263272E100DBCF3F /* login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		885230E7263272E100DBCF3F /* loginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginApp.swift; sourceTree = "<group>"; };
 		885230E9263272E100DBCF3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,9 +101,29 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		13BD6E89280DCD3F00B194BD /* loginTests */ = {
+			isa = PBXGroup;
+			children = (
+				13BD6E8B280DCD6200B194BD /* Info.plist */,
+				13BD6E8C280DCD6200B194BD /* loginTests.swift */,
+			);
+			path = loginTests;
+			sourceTree = "<group>";
+		};
+		13BD6E8A280DCD4700B194BD /* loginUITests */ = {
+			isa = PBXGroup;
+			children = (
+				13BD6E90280DCD6E00B194BD /* Info.plist */,
+				13BD6E8F280DCD6E00B194BD /* loginUITests.swift */,
+			);
+			path = loginUITests;
+			sourceTree = "<group>";
+		};
 		885230DB263272E100DBCF3F = {
 			isa = PBXGroup;
 			children = (
+				13BD6E8A280DCD4700B194BD /* loginUITests */,
+				13BD6E89280DCD3F00B194BD /* loginTests */,
 				885230E6263272E100DBCF3F /* login */,
 				885230F8263272E200DBCF3F /* loginTests */,
 				88523103263272E200DBCF3F /* loginUITests */,
@@ -268,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13BD6E8D280DCD6200B194BD /* Info.plist in Resources */,
 				13BD6E82280DCC9400B194BD /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13BD6E92280DCD6E00B194BD /* Info.plist in Resources */,
 				13BD6E86280DCCA500B194BD /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +330,7 @@
 			files = (
 				885230FA263272E200DBCF3F /* loginTests.swift in Sources */,
 				13BD6E84280DCC9B00B194BD /* loginTests.swift in Sources */,
+				13BD6E8E280DCD6200B194BD /* loginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +340,7 @@
 			files = (
 				88523105263272E200DBCF3F /* loginUITests.swift in Sources */,
 				13BD6E88280DCCAA00B194BD /* loginUITests.swift in Sources */,
+				13BD6E91280DCD6E00B194BD /* loginUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
