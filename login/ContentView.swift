@@ -11,9 +11,16 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Image("onboard")
-            Text("Heyyy")
-                .padding()
+            Text("Get Started")
+                .fontWeight(.bold)
+                .font(.title3)
+                .frame(maxWidth: .infinity)
+                .padding(20)
+                .foregroundColor(.white)
+                .background(Color("PrimaryColor"))
+                .cornerRadius(40)
         }
+        .padding(30)
     }
 }
 
