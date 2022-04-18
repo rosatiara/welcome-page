@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		137058C3280DACF300363CB7 /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137058C2280DACF300363CB7 /* WelcomeScreenView.swift */; };
+		13BD6E7C280DC7F200B194BD /* SignInScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD6E7B280DC7F200B194BD /* SignInScreenView.swift */; };
 		885230E8263272E100DBCF3F /* loginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885230E7263272E100DBCF3F /* loginApp.swift */; };
 		885230EA263272E100DBCF3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885230E9263272E100DBCF3F /* ContentView.swift */; };
 		885230EC263272E200DBCF3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885230EB263272E200DBCF3F /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		137058C2280DACF300363CB7 /* WelcomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
+		13BD6E7B280DC7F200B194BD /* SignInScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenView.swift; sourceTree = "<group>"; };
 		885230E4263272E100DBCF3F /* login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		885230E7263272E100DBCF3F /* loginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginApp.swift; sourceTree = "<group>"; };
 		885230E9263272E100DBCF3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				137058C2280DACF300363CB7 /* WelcomeScreenView.swift */,
+				13BD6E7B280DC7F200B194BD /* SignInScreenView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13BD6E7C280DC7F200B194BD /* SignInScreenView.swift in Sources */,
 				137058C3280DACF300363CB7 /* WelcomeScreenView.swift in Sources */,
 				885230EA263272E100DBCF3F /* ContentView.swift in Sources */,
 				885230E8263272E100DBCF3F /* loginApp.swift in Sources */,
