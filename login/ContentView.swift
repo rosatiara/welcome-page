@@ -11,14 +11,8 @@ struct ContentView: View {
    
     var body: some View {
         VStack {
-            SignInScreenView()
+            WelcomeScreenView()
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
 
@@ -61,23 +55,10 @@ struct SignUp: View {
     }
 }
 
-struct SocialLoginButton: View {
-    var image: Image
-    var text: Text
-    var body: some View {
-        HStack {
-            image
-            Spacer()
-            text
-            Spacer()
-        }
-        .padding()
-        .frame(maxWidth: .infinity)
-        .background(Color(.white))
-        .cornerRadius(50)
-        .shadow(color: Color.black.opacity(0.09), radius: 60, x: 0, y: 20)
+// for simulator purpose
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
-
-
-

@@ -51,6 +51,24 @@ struct EmailTextField: View {
         
     }
 }
+struct SocialLoginButton: View {
+    var image: Image
+    var text: Text
+    var body: some View {
+        HStack {
+            image
+            Spacer()
+            text
+            Spacer()
+        }
+        .padding()
+        .frame(maxWidth: .infinity)
+        .background(Color(.white))
+        .cornerRadius(50)
+        .shadow(color: Color.black.opacity(0.09), radius: 60, x: 0, y: 20)
+    }
+}
+
 struct SignInScreenView_Previews: PreviewProvider {
     static var previews: some View {
         SignInScreenView()
