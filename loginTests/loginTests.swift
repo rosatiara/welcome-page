@@ -1,9 +1,3 @@
-//
-//  loginTests.swift
-//  loginTests
-//
-//  Created by Abu Anwar MD Abdullah on 23/4/21.
-//
 
 import XCTest
 @testable import login
