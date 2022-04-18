@@ -17,7 +17,22 @@ struct WelcomeScreenView: View {
                     Image("onboard")
                     Spacer()
                     PrimaryButton(title: "Get Started")
-                    SignInButton(title: "Sign In")
+                    NavigationLink(
+                        destination: {
+                            SignInScreenView()
+                        },
+                        label: {
+                            Text("Sign in")
+                                .fontWeight(.bold)
+                                .font(.title3)
+                                .frame(maxWidth: .infinity)
+                                .padding()
+                                .foregroundColor(Color("PrimaryColor"))
+                                .background(Color(.white))
+                                .cornerRadius(40)
+                                .shadow(color: Color.black.opacity(0.09), radius: 60, x: 0, y: 20)
+                        }
+                    )
                     SignUp()
                         .padding(.vertical)
                 }
